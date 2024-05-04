@@ -4,7 +4,7 @@ Created on Fri May  3 22:38:35 2024
 
 @author: Marcelo Melo
 """
-# exemplo do site
+
 import gradio as gr
 import numpy as np    
 
@@ -33,10 +33,10 @@ def escolhas(input_img,filtro):
 
     return final_img #retorna a imagem com o filtro aplicado
 
-demo = gr.Interface(escolhas,
-                    [gr.Image(),
-                     gr.Dropdown(["Sepia","Preto e branco"], label="Filtros", info="mais filtros no futuro")],
-                    "image",
+demo = gr.Interface(escolhas, #configs da interface
+                    [gr.Image(), #input de imagem
+                     gr.Dropdown(["Sepia","Preto e branco"], label="Filtros", info="mais filtros no futuro")], #input com dropdown
+                    "image", #output da imagem com filtro
                     allow_flagging=False
                     )
   
