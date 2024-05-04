@@ -16,8 +16,8 @@ def escolhas(input_img,filtro):
             [0.349, 0.686, 0.168], 
             [0.272, 0.534, 0.131]  
         ])
-        sepia_img = input_img.dot(sepia_filter.T) # o que é isso? .dot e .T
-        sepia_img /= sepia_img.max() # o que é isso? divisão e .max
+        sepia_img = input_img.dot(sepia_filter.T)
+        sepia_img /= sepia_img.max()
         final_img = sepia_img # passa o resultado da imagem com o filtro aplicado para a imagem final
         
 #preto e branco      
