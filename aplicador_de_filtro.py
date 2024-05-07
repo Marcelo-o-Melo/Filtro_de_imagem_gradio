@@ -8,7 +8,7 @@ Created on Fri May  3 22:38:35 2024
 import gradio as gr
 import numpy as np    
 
-def escolhas(input_img,filtro):
+def escolhas(input_img,filtro): #recebe o input de imagem e o tipo de filtro
 #sepia
     if filtro == "Sepia" :     
         sepia_filter = np.array([ #matriz que armazena as coordenadas das cores
